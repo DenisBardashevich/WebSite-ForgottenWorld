@@ -635,6 +635,8 @@ footer {
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
 }
 
+
+
 .header-btn.main-btn {
     position: absolute;
     bottom: 10%;
@@ -1037,4 +1039,22 @@ footer {
 
 .prvac, .term {
     margin-top: 120px;
+}
+
+@media (max-width:426px) {
+    .header-title-overlay{
+        font-size: 2rem;
+        top: 55%;
+    }
+    .team-section{
+        margin-top: 140px;
+    }
+    .partnership-offer{
+        margin-top: 140px;
+    }
+    
+    .prvac, .term{
+        margin-top: 140px;
+    }
+    
 }
