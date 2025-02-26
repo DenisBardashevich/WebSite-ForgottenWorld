@@ -1041,6 +1041,7 @@ footer {
     margin-top: 120px;
 }
 
+
 @media (max-width:426px) {
     .header-title-overlay{
         font-size: 2rem;
@@ -1056,5 +1057,6 @@ footer {
     .prvac, .term{
         margin-top: 140px;
     }
-    
+
+
 }
