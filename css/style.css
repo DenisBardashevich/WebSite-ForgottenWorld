@@ -12,6 +12,7 @@ body {
 }
 html {
     scroll-behavior: smooth;
+    overflow: hidden;
     
 }
 
@@ -94,6 +95,10 @@ section {
     font-size: 2.5rem;
     font-weight: bold;
     z-index: 1;
+    
+}
+.text-about{
+    padding: 0 20px;
 }
 
 .header-btn {
@@ -248,7 +253,6 @@ footer {
 
     .pricing-content {
         display: grid;
-        grid-template-columns: 1fr 1fr;
         gap: 20px;
     }
 
@@ -735,6 +739,17 @@ footer {
     height: auto;
     object-fit: cover;
     border-radius: 10px;
+  }
+
+  @media (max-width:426px) {
+    .form-image img{
+        display: none;
+    }
+
+    .contact-form-container{
+        display: block;
+    }
+    
   }
   
   .form-content {
