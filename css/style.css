@@ -632,7 +632,6 @@ footer {
 
 .header-btn.main-btn:hover {
     background-color: #c0392b;
-    transform: translateY(-4px);
 }
 
 /* Заголовок проектов */
