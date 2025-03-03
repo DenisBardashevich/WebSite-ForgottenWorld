@@ -56,6 +56,13 @@ header {
     text-transform: uppercase;
 }
 
+@media (max-width:426px) {
+    .header-name{
+        font-size: 1.5rem;
+    }
+    
+}
+
 .header-nav {
     display: flex;
 }
@@ -389,6 +396,7 @@ header {
     font-weight: bold;
 }
 
+
 .header-nav-items {
     list-style: none;
     padding: 0;
@@ -419,9 +427,17 @@ header {
 }
 
 .team-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    display: flex;
     gap: 20px;
+}
+@media (max-width:1250px) {
+    .team-grid{
+        flex-direction: column;
+    }
+    .team-section{
+        margin-top: 50px;
+    }
+    
 }
 
 .team-member {
@@ -981,6 +997,9 @@ footer {
     max-width: 500px;
     transition: transform 0.3s;
     text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .team-card:hover {
@@ -1021,7 +1040,7 @@ footer {
 }
 
 .join-button:hover {
-    background-color: #e76f51;
+    background-color: #f0a500;
 }
 
 @media (max-width: 768px) {
@@ -1039,6 +1058,12 @@ footer {
 .prvac, .term {
     margin-top: 120px;
 }
+.partnership-offer{
+    margin-top: 70px;
+}
+.team-section{
+    margin-top: 30px;
+}
 
 
 @media (max-width:426px) {
@@ -1049,13 +1074,217 @@ footer {
     .team-section{
         margin-top: 140px;
     }
-    .partnership-offer{
-        margin-top: 140px;
-    }
+
     
     .prvac, .term{
         margin-top: 140px;
     }
+    .partnership-offer{
+        margin-top: 120px;
+    }
 
 
+}
+
+.partnership-offer, .team-training, .player-experiences, .join-adventure {
+    text-align: center;
+    padding: 60px 20px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+}
+
+.partnership-offer {
+    background: linear-gradient(to right, #352727, #213456);
+    color: white;
+}
+
+.our-worlds {
+    background: url('../img/reviews/bg.jpg') center/cover no-repeat;
+    padding: 80px 20px;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+}
+.our-worlds-text{
+    color: #ffffff;
+}
+
+.how-it-works .steps {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    text-align: center;
+}
+
+.how-it-works .step {
+    flex: 1 1 calc(33% - 20px);
+    background: #2e3b4e;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.how-it-works .step img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.team-training {
+    background: #2e3b4e;
+}
+
+.player-experiences {
+    background: #2e3b4e;
+    color: white;
+}
+
+.join-adventure {
+    background: #2e3b4e;
+    color: white;
+}
+
+.btn-primary {
+    display: inline-block;
+    padding: 15px 30px;
+    background: #ff6600;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.btn-primary:hover {
+    background: #e65c00;
+}
+
+@media (max-width: 768px) {
+    .how-it-works .steps {
+        flex-direction: column;
+    }
+    .how-it-works .step {
+        flex: 1 1 100%;
+    }
+}
+
+.quest-gallery {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.quest-gallery h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.quest-gallery p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 15px;
+    justify-items: center;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.05);
+}
+
+
+
+
+.training-program img, .team-building img{
+    border-radius: 0;
+    width: 250px;
+    height: 200px;
+    padding: 0 10px;
+
+}
+
+
+/* Стили для секции с фото квестов */
+.quest-photos {
+    padding: 40px 20px;
+    background: linear-gradient(to right, #352727, #213456);    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+.quest-photos h2 {
+    font-size: 2.2em;
+    margin-bottom: 20px;
+    color: #b3b3b3;
+    text-align: center;
+}
+
+.quest-photos p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    color: #777777;
+    text-align: center;
+}
+
+.photo-gallery {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.photo-gallery img {
+    width: 100%;
+    height: 200px; /* Уменьшена высота */
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Эффект при наведении на изображения */
+.photo-gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Адаптивность для планшетов */
+@media (max-width: 768px) {
+    .photo-gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Адаптивность для мобильных устройств */
+@media (max-width: 480px) {
+    .quest-photos h2 {
+        font-size: 1.6em;
+    }
+
+    .quest-photos p {
+        font-size: 1em;
+    }
+
+    .photo-gallery {
+        grid-template-columns: 1fr;
+    }
+}
+@media (max-width:426px) {
+    .header-name{
+        font-size: 1.5rem;
+    }
+    .header-nav-item a{
+        font-size: 0.9rem;
+    }
+    
 }
