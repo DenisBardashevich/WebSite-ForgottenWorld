@@ -197,8 +197,8 @@ section {
 }
 
 .card-image {
-    width: 100%;
-    height: 200px;
+    width: 80%;
+    height: 500px;
     object-fit: cover;
     border-radius: 10px;
 }
@@ -362,7 +362,7 @@ body {
 
 h1, h2, h3 {
     font-family: 'Montserrat', sans-serif;
-    color: #181818;
+    color: #7a7979;
     margin-bottom: 15px;
 }
 
@@ -370,7 +370,7 @@ p {
     font-size: 1.1rem;
     line-height: 1.6;
     margin-bottom: 15px;
-        color: #7d7d7d;
+        color: #cbc9c9;
 
 }
 
@@ -378,6 +378,10 @@ p {
 header {
     background-color: #2e3b4e;
     padding: 20px 0;
+}
+main{
+    max-width: 1600px;
+    margin: 0 auto;
 }
 
 .nav-content {
@@ -677,7 +681,7 @@ footer {
     text-align: center;
     font-size: 2.5rem;
     margin-top: 50px;
-    color: #34495e;
+    color: #47637f;
     font-weight: 600;
 }
 
@@ -1288,3 +1292,4 @@ footer {
     }
     
 }
+
